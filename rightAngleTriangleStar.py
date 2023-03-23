@@ -1,13 +1,13 @@
-satir = int(input("Satır sayısı giriniz: "))
+line = int(input("Enter number of lines: "))
 
-# Üst kısım
-for i in range(1, satir+1):
-    for j in range(0, satir-i):
+# Upper side
+for i in range(1, line+1):
+    for j in range(0, line-i):
         print("*", end="")
     print("")
 
-# Alt kısım
-for i in range(1, satir+1):
-    for j in range(satir-1, satir-i, -1):
+# Lower side
+for i in range(1, line+1):
+    for j in range(line-1, line-i, -1):
         print("*", end="")
     print("")
